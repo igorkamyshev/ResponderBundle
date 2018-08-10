@@ -1,0 +1,16 @@
+language: php
+php:
+  - '7.1'
+  - '7.2'
+
+jobs:
+  include:
+    - stage: lint code
+      install: composer install -o
+      script: php vendor/bin/ecs check src
+    - stage: lint test
+      install: composer install -o
+      script: php vendor/bin/ecs check tests
+    - stage: test
+      install: composer install -o
+      script: php vendor/bin/phpunit

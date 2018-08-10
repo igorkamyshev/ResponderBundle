@@ -1,3 +1,4 @@
 vendor
 composer.lock
 .ecs_cache
+phpunit.xml
