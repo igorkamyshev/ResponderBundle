@@ -9,7 +9,7 @@ class ResultMetadata
         $this->type = $type;
     }
 
-    public function getType(): stirng
+    public function getType(): string
     {
         return $this->type;
     }
