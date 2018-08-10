@@ -1,0 +1,8 @@
+services:
+  Kamyshev\ResponderBundle\Responder\ResponderSubscriber:
+    arguments: [!tagged kamyshev.responder]
+    tags: ['kernel.event_subscriber']
+
+  _instanceof:
+    Kamyshev\ResponderBundle\Responder\ResponderInterface:
+      tags: ['kamyshev.responder']

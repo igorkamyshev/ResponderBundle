@@ -1,0 +1,26 @@
+{
+    "name": "kamyshev/responder-bundle",
+    "description": "A Symfony Bundle to easy handling returning any type from controllers and transforming it to Response",
+    "keywords": ["response", "middleware", "symfony"],
+    "type": "symfony-bundle",
+    "license": "MIT",
+    "require": {
+        "php": "^7.1",
+        "symfony/framework-bundle": "^4.1",
+        "symfony/http-foundation": "^4.1",
+        "kamyshev/array_find": "^1.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^7.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Kamyshev\\ResponserBundle\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Kamyshev\\Tests\\ResponserBundle\\": "tests/"
+        }
+    }
+}
