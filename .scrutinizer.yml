@@ -1,0 +1,2 @@
+tools:
+  php_cs_fixer: false
