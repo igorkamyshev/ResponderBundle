@@ -1,3 +1,6 @@
+[![Build Status](https://travis-ci.org/igorkamyshev/ResponderBundle.svg?branch=master)](https://travis-ci.org/igorkamyshev/ResponderBundle)
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/igorkamyshev/ResponderBundle/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/igorkamyshev/ResponderBundle/?branch=master)
+
 # ResponderBundle
 
 > A Symfony Bundle to easy handling returning any type from controllers and transforming it to Response

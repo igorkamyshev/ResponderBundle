@@ -2,7 +2,6 @@
 
 namespace Kamyshev\Tests\ResponderBundle\Responder;
 
-
 use Kamyshev\ResponderBundle\Responder\ResponderInterface;
 use Kamyshev\ResponderBundle\Responder\ResponderSubscriber;
 use PHPUnit\Framework\TestCase;
