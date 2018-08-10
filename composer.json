@@ -15,12 +15,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Kamyshev\\ResponserBundle\\": "src/"
+            "Kamyshev\\ResponderBundle\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Kamyshev\\Tests\\ResponserBundle\\": "tests/"
+            "Kamyshev\\Tests\\ResponderBundle\\": "tests/"
         }
     }
 }
