@@ -14,5 +14,6 @@ class ResultMetadata
         return $this->type;
     }
 
+    /** @var string */
     private $type;
 }

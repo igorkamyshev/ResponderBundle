@@ -13,19 +13,19 @@ class ResponderSubscriber implements EventSubscriberInterface
 
     public function __construct(iterable $responders)
     {
-        $this->responders = (function (ResponderInterface ...$responders) {
+        $this->responders = (function (ResponderInterface ...$responders): iterable {
             return $responders;
         })(...$responders);
     }
 
-    public function onKernelView(GetResponseForControllerResultEvent $event)
+    public function onKernelView(GetResponseForControllerResultEvent $event): void
     {
         $result = $event->getControllerResult();
         $meta = new ResultMetadata(get_class($result));
 
         $specificResponder = array_find(
             $this->responders,
-            function (ResponderInterface $responder) use ($meta, $result) {
+            function (ResponderInterface $responder) use ($meta, $result): bool {
                 return $responder->supports($result, $meta);
             }
         );

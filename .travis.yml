@@ -13,3 +13,6 @@ jobs:
     - stage: test
       install: composer install -o
       script: php vendor/bin/phpunit
+    - stage: analysis
+      install: composer install -o
+      script: php vendor/bin/psalm
