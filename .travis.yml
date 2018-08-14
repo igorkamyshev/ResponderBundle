@@ -4,12 +4,9 @@ php:
 
 jobs:
   include:
-    - stage: lint code
+    - stage: lint
       install: composer install -o
-      script: php vendor/bin/ecs check src
-    - stage: lint test
-      install: composer install -o
-      script: php vendor/bin/ecs check tests
+      script: php vendor/bin/ecs check {src,tests}
     - stage: test
       install: composer install -o
       script: php vendor/bin/phpunit
